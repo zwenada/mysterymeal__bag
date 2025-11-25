@@ -115,7 +115,7 @@ const App = () => {
   });
 
   const Hero = () => (
-    <div className="bg-linear-to-r from-green-600 to-emerald-600 text-gold py-16 px-6 rounded-2xl mb-8">
+    <div className="bg-linear-to-r from-blue-900 to-blue-950 text-gold py-16 px-6 rounded-2xl mb-8">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
           Mystery Meal Bag
@@ -154,7 +154,7 @@ const App = () => {
           placeholder="Search for food, ingredients, or sellers..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full pl-12 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:border-green-500 focus:outline-none"
+          className="w-full pl-12 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:outline-none"
         />
       </div>
     </div>
@@ -166,7 +166,7 @@ const App = () => {
         onClick={() => setSelectedCategory("all")}
         className={`px-6 py-2 rounded-full font-medium whitespace-nowrap transition ${
           selectedCategory === "all"
-            ? "bg-green-600 text-white"
+            ? "bg-blue-900 text-white"
             : "bg-gray-100 text-gray-700 hover:bg-gray-200"
         }`}
       >
@@ -176,7 +176,7 @@ const App = () => {
         onClick={() => setSelectedCategory("ingredients")}
         className={`px-6 py-2 rounded-full font-medium whitespace-nowrap transition ${
           selectedCategory === "ingredients"
-            ? "bg-green-600 text-white"
+            ? "bg-blue-900 text-white"
             : "bg-gray-100 text-gray-700 hover:bg-gray-200"
         }`}
       >
@@ -186,7 +186,7 @@ const App = () => {
         onClick={() => setSelectedCategory("restaurant")}
         className={`px-6 py-2 rounded-full font-medium whitespace-nowrap transition ${
           selectedCategory === "restaurant"
-            ? "bg-green-600 text-white"
+            ? "bg-blue-900 text-white"
             : "bg-gray-100 text-gray-700 hover:bg-gray-200"
         }`}
       >
@@ -196,7 +196,7 @@ const App = () => {
         onClick={() => setSelectedCategory("catering")}
         className={`px-6 py-2 rounded-full font-medium whitespace-nowrap transition ${
           selectedCategory === "catering"
-            ? "bg-green-600 text-white"
+            ? "bg-blue-900 text-white"
             : "bg-gray-100 text-gray-700 hover:bg-gray-200"
         }`}
       >
@@ -241,14 +241,14 @@ const App = () => {
             <span className="text-gray-400 line-through text-sm mr-2">
               ${listing.originalPrice}
             </span>
-            <span className="text-green-600 font-bold text-2xl">
+            <span className="text-blue-900 font-bold text-2xl">
               ${listing.salePrice}
             </span>
           </div>
           <span className="text-sm text-gray-500">{listing.quantity}</span>
         </div>
 
-        <button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition">
+        <button className="w-full bg-blue-900 hover:bg-blue-950 text-white py-3 rounded-lg font-semibold transition">
           Reserve Now
         </button>
       </div>
@@ -261,7 +261,7 @@ const App = () => {
       <div className="grid md:grid-cols-4 gap-6">
         <div className="text-center">
           <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Search className="text-green-600" size={32} />
+            <Search className="text-blue-900" size={32} />
           </div>
           <h3 className="font-bold mb-2">1. Browse</h3>
           <p className="text-gray-600 text-sm">
@@ -270,7 +270,7 @@ const App = () => {
         </div>
         <div className="text-center">
           <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-            <ShoppingBag className="text-green-600" size={32} />
+            <ShoppingBag className="text-blue-900" size={32} />
           </div>
           <h3 className="font-bold mb-2">2. Reserve</h3>
           <p className="text-gray-600 text-sm">
@@ -279,14 +279,14 @@ const App = () => {
         </div>
         <div className="text-center">
           <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-            <MapPin className="text-green-600" size={32} />
+            <MapPin className="text-blue-900" size={32} />
           </div>
           <h3 className="font-bold mb-2">3. Pick Up</h3>
           <p className="text-gray-600 text-sm">Collect at specified time</p>
         </div>
         <div className="text-center">
           <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Heart className="text-green-600" size={32} />
+            <Heart className="text-blue-900" size={32} />
           </div>
           <h3 className="font-bold mb-2">4. Enjoy</h3>
           <p className="text-gray-600 text-sm">Save money and reduce waste!</p>
@@ -301,24 +301,24 @@ const App = () => {
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <ShoppingBag className="text-green-600" size={32} />
+            <ShoppingBag className="text-blue-900" size={32} />
             <h1 className="text-xl font-bold text-gray-800">
               Mystery Meal Bag
             </h1>
           </div>
           <nav className="hidden md:flex gap-6">
-            <button className="text-gray-600 hover:text-green-600 font-medium">
+            <button className="text-gray-600 hover:text-blue-900 font-medium">
               For Sellers
             </button>
-            <button className="text-gray-600 hover:text-green-600 font-medium">
+            <button className="text-gray-600 hover:text-blue-900 font-medium">
               About
             </button>
           </nav>
           <div className="flex items-center gap-4">
-            <button className="text-gray-600 hover:text-green-600">
+            <button className="text-gray-600 hover:text-blue-900">
               <Heart size={24} />
             </button>
-            <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium">
+            <button className="bg-blue-900 hover:bg-blue-950 text-white px-6 py-2 rounded-lg font-medium">
               Sign In
             </button>
           </div>
@@ -348,7 +348,7 @@ const App = () => {
           <button
             onClick={() => setActiveTab("home")}
             className={`flex flex-col items-center gap-1 ${
-              activeTab === "home" ? "text-green-600" : "text-gray-600"
+              activeTab === "home" ? "text-blue-900" : "text-gray-600"
             }`}
           >
             <Home size={24} />
