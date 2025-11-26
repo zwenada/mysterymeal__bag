@@ -117,10 +117,8 @@ const App = () => {
   const Hero = () => (
     <div className="bg-linear-to-r from-blue-900 to-blue-950 text-gold py-16 px-6 rounded-2xl mb-8">
       <div className="max-w-4xl mx-auto text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Mystery Meal Bag
-        </h1>
-        <p className="text-xl mb-6 text-green-50">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">MysteryMeal Bag</h1>
+        <p className="text-xl mb-6 text-blue-300">
           Discover surprise deals on quality food & ingredients from your
           neighbors and local restaurants
         </p>
@@ -260,7 +258,7 @@ const App = () => {
       <h2 className="text-3xl font-bold text-center mb-8">How It Works</h2>
       <div className="grid md:grid-cols-4 gap-6">
         <div className="text-center">
-          <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="bg-green-200 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
             <Search className="text-blue-900" size={32} />
           </div>
           <h3 className="font-bold mb-2">1. Browse</h3>
