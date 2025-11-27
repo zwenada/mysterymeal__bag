@@ -147,23 +147,23 @@ const App = () => {
           className="flex items-center gap-2 hover:opacity-80 transition"
         >
           <ShoppingBag className="text-green-600" size={32} />
-          <h1 className="text-xl font-bold text-gray-800">Mystery Meal Bag</h1>
+          <h1 className="text-xl font-bold text-gray-800">MysteryMeal Bag</h1>
         </button>
         <nav className="hidden md:flex gap-6">
           <button
             onClick={() => navigate("/sellers")}
-            className="text-gray-600 hover:text-green-600 font-medium"
+            className="text-gray-600 hover:text-blue-600 font-medium"
           >
             For Sellers
           </button>
-          <button className="text-gray-600 hover:text-green-600 font-medium">
+          <button className="text-gray-600 hover:text-blue-600 font-medium">
             About
           </button>
         </nav>
         <div className="flex items-center gap-4">
           <button
             onClick={() => navigate("/favorites")}
-            className="text-gray-600 hover:text-green-600 relative"
+            className="text-gray-600 hover:text-blue-600 relative"
           >
             <Heart
               size={24}
@@ -178,14 +178,14 @@ const App = () => {
           {user ? (
             <button
               onClick={() => navigate("/profile")}
-              className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium"
             >
               {user.name}
             </button>
           ) : (
             <button
               onClick={() => navigate("/signin")}
-              className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium"
             >
               Sign In
             </button>
@@ -198,12 +198,12 @@ const App = () => {
   // Home Page
   const HomePage = () => {
     const Hero = () => (
-      <div className="bg-linear-to-r from-green-600 to-emerald-600 text-white py-16 px-6 rounded-2xl mb-8">
+      <div className="bg-linear-to-r from-blue-600 to-emerald-600 text-white py-16 px-6 rounded-2xl mb-8">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Mystery Meal Bag
           </h1>
-          <p className="text-xl mb-6 text-green-50">
+          <p className="text-xl mb-6 text-blue-50">
             Discover surprise deals on quality food & ingredients from your
             neighbors and local restaurants
           </p>
@@ -237,7 +237,7 @@ const App = () => {
             placeholder="Search for food, ingredients, or sellers..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-12 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:border-green-500 focus:outline-none"
+            className="w-full pl-12 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:outline-none"
           />
         </div>
       </div>
@@ -249,7 +249,7 @@ const App = () => {
           onClick={() => setSelectedCategory("all")}
           className={`px-6 py-2 rounded-full font-medium whitespace-nowrap transition ${
             selectedCategory === "all"
-              ? "bg-green-600 text-white"
+              ? "bg-blue-600 text-white"
               : "bg-gray-100 text-gray-700 hover:bg-gray-200"
           }`}
         >
@@ -259,7 +259,7 @@ const App = () => {
           onClick={() => setSelectedCategory("ingredients")}
           className={`px-6 py-2 rounded-full font-medium whitespace-nowrap transition ${
             selectedCategory === "ingredients"
-              ? "bg-green-600 text-white"
+              ? "bg-blue-600 text-white"
               : "bg-gray-100 text-gray-700 hover:bg-gray-200"
           }`}
         >
@@ -269,7 +269,7 @@ const App = () => {
           onClick={() => setSelectedCategory("restaurant")}
           className={`px-6 py-2 rounded-full font-medium whitespace-nowrap transition ${
             selectedCategory === "restaurant"
-              ? "bg-green-600 text-white"
+              ? "bg-blue-600 text-white"
               : "bg-gray-100 text-gray-700 hover:bg-gray-200"
           }`}
         >
@@ -279,7 +279,7 @@ const App = () => {
           onClick={() => setSelectedCategory("catering")}
           className={`px-6 py-2 rounded-full font-medium whitespace-nowrap transition ${
             selectedCategory === "catering"
-              ? "bg-green-600 text-white"
+              ? "bg-blue-600 text-white"
               : "bg-gray-100 text-gray-700 hover:bg-gray-200"
           }`}
         >
@@ -342,7 +342,7 @@ const App = () => {
               <span className="text-gray-400 line-through text-sm mr-2">
                 ${listing.originalPrice}
               </span>
-              <span className="text-green-600 font-bold text-2xl">
+              <span className="text-blue-600 font-bold text-2xl">
                 ${listing.salePrice}
               </span>
             </div>
@@ -353,7 +353,7 @@ const App = () => {
 
           <button
             onClick={() => navigate(`/reserve/${listing.id}`)}
-            className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition"
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition"
           >
             Reserve Now
           </button>
@@ -366,8 +366,8 @@ const App = () => {
         <h2 className="text-3xl font-bold text-center mb-8">How It Works</h2>
         <div className="grid md:grid-cols-4 gap-6">
           <div className="text-center">
-            <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Search className="text-green-600" size={32} />
+            <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Search className="text-blue-600" size={32} />
             </div>
             <h3 className="font-bold mb-2">1. Browse</h3>
             <p className="text-gray-600 text-sm">
@@ -375,8 +375,8 @@ const App = () => {
             </p>
           </div>
           <div className="text-center">
-            <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <ShoppingBag className="text-green-600" size={32} />
+            <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <ShoppingBag className="text-blue-600" size={32} />
             </div>
             <h3 className="font-bold mb-2">2. Reserve</h3>
             <p className="text-gray-600 text-sm">
@@ -384,15 +384,15 @@ const App = () => {
             </p>
           </div>
           <div className="text-center">
-            <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <MapPin className="text-green-600" size={32} />
+            <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <MapPin className="text-blue-600" size={32} />
             </div>
             <h3 className="font-bold mb-2">3. Pick Up</h3>
             <p className="text-gray-600 text-sm">Collect at specified time</p>
           </div>
           <div className="text-center">
-            <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Heart className="text-green-600" size={32} />
+            <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Heart className="text-blue-600" size={32} />
             </div>
             <h3 className="font-bold mb-2">4. Enjoy</h3>
             <p className="text-gray-600 text-sm">
@@ -440,7 +440,7 @@ const App = () => {
       <div className="min-h-screen flex items-center justify-center px-4 py-12">
         <div className="bg-white rounded-2xl shadow-xl p-8 max-w-md w-full">
           <div className="text-center mb-8">
-            <ShoppingBag className="text-green-600 mx-auto mb-4" size={48} />
+            <ShoppingBag className="text-blue-600 mx-auto mb-4" size={48} />
             <h2 className="text-3xl font-bold text-gray-800 mb-2">
               {isSignUp ? "Create Account" : "Welcome Back"}
             </h2>
@@ -461,7 +461,7 @@ const App = () => {
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-green-500 focus:outline-none"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                   placeholder="John Doe"
                   required
                 />
@@ -476,7 +476,7 @@ const App = () => {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-green-500 focus:outline-none"
+                className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                 placeholder="you@example.com"
                 required
               />
@@ -490,7 +490,7 @@ const App = () => {
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-green-500 focus:outline-none"
+                className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                 placeholder="••••••••"
                 required
               />
@@ -498,7 +498,7 @@ const App = () => {
 
             <button
               type="submit"
-              className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition"
+              className="w-full bg-blue-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition"
             >
               {isSignUp ? "Sign Up" : "Sign In"}
             </button>
