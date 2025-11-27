@@ -498,7 +498,7 @@ const App = () => {
 
             <button
               type="submit"
-              className="w-full bg-blue-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition"
             >
               {isSignUp ? "Sign Up" : "Sign In"}
             </button>
@@ -507,7 +507,7 @@ const App = () => {
           <div className="mt-6 text-center">
             <button
               onClick={() => setIsSignUp(!isSignUp)}
-              className="text-green-600 hover:text-green-700 font-medium"
+              className="text-blue-600 hover:text-blue-700 font-medium"
             >
               {isSignUp
                 ? "Already have an account? Sign In"
@@ -531,7 +531,7 @@ const App = () => {
           <p className="text-gray-600">Listing not found</p>
           <button
             onClick={() => navigate("/")}
-            className="mt-4 text-green-600 hover:text-green-700 font-medium"
+            className="mt-4 text-blue-600 hover:text-blue-700 font-medium"
           >
             Back to Home
           </button>
@@ -552,7 +552,7 @@ const App = () => {
       <div className="max-w-4xl mx-auto">
         <button
           onClick={() => navigate("/")}
-          className="flex items-center gap-2 text-gray-600 hover:text-green-600 mb-6"
+          className="flex items-center gap-2 text-gray-600 hover:text-blue-600 mb-6"
         >
           <ArrowLeft size={20} />
           <span>Back to listings</span>
@@ -589,13 +589,13 @@ const App = () => {
               </button>
             </div>
 
-            <div className="bg-green-50 border-2 border-green-200 rounded-xl p-4 mb-6">
+            <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-4 mb-6">
               <div className="flex items-center justify-between">
                 <div>
                   <span className="text-gray-500 line-through text-lg mr-3">
                     ${listing.originalPrice}
                   </span>
-                  <span className="text-green-600 font-bold text-4xl">
+                  <span className="text-blue-600 font-bold text-4xl">
                     ${listing.salePrice}
                   </span>
                 </div>
@@ -611,7 +611,7 @@ const App = () => {
 
             <div className="space-y-4 mb-6">
               <div className="flex items-center gap-3 text-gray-700">
-                <MapPin size={24} className="text-green-600" />
+                <MapPin size={24} className="text-blue-600" />
                 <div>
                   <p className="font-semibold">Location</p>
                   <p>{listing.location}</p>
@@ -619,7 +619,7 @@ const App = () => {
               </div>
 
               <div className="flex items-center gap-3 text-gray-700">
-                <Clock size={24} className="text-green-600" />
+                <Clock size={24} className="text-blue-600" />
                 <div>
                   <p className="font-semibold">Pickup Time</p>
                   <p>{listing.pickupTime}</p>
@@ -627,7 +627,7 @@ const App = () => {
               </div>
 
               <div className="flex items-center gap-3 text-gray-700">
-                <ShoppingBag size={24} className="text-green-600" />
+                <ShoppingBag size={24} className="text-blue-600" />
                 <div>
                   <p className="font-semibold">Available</p>
                   <p>{listing.quantity} bags remaining</p>
@@ -666,7 +666,7 @@ const App = () => {
             <div className="bg-gray-50 rounded-xl p-4 mb-6">
               <div className="flex justify-between items-center">
                 <span className="text-lg font-semibold">Total</span>
-                <span className="text-3xl font-bold text-green-600">
+                <span className="text-3xl font-bold text-blue-600">
                   ${(listing.salePrice * quantity).toFixed(2)}
                 </span>
               </div>
@@ -674,7 +674,7 @@ const App = () => {
 
             <button
               onClick={handleReserve}
-              className="w-full bg-green-600 hover:bg-green-700 text-white py-4 rounded-xl font-bold text-lg transition"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-xl font-bold text-lg transition"
             >
               Reserve & Pay Now
             </button>
@@ -710,7 +710,7 @@ const App = () => {
       return (
         <div className="min-h-screen flex items-center justify-center px-4">
           <div className="bg-white rounded-2xl shadow-xl p-12 max-w-md w-full text-center">
-            <CheckCircle className="text-green-600 mx-auto mb-6" size={80} />
+            <CheckCircle className="text-blue-600 mx-auto mb-6" size={80} />
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
               Payment Successful!
             </h2>
@@ -718,9 +718,9 @@ const App = () => {
               Your reservation has been confirmed. Check your email for pickup
               details.
             </p>
-            <div className="bg-green-50 border-2 border-green-200 rounded-xl p-4 mb-6">
+            <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-4 mb-6">
               <p className="text-sm text-gray-600 mb-1">Total Paid</p>
-              <p className="text-3xl font-bold text-green-600">
+              <p className="text-3xl font-bold text-blue-600">
                 ${total.toFixed(2)}
               </p>
             </div>
@@ -740,7 +740,7 @@ const App = () => {
           <p className="text-gray-600 mb-6">Add some items before checkout</p>
           <button
             onClick={() => navigate("/")}
-            className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold"
           >
             Browse Listings
           </button>
@@ -752,7 +752,7 @@ const App = () => {
       <div className="max-w-4xl mx-auto">
         <button
           onClick={() => navigate("/")}
-          className="flex items-center gap-2 text-gray-600 hover:text-green-600 mb-6"
+          className="flex items-center gap-2 text-gray-600 hover:text-blue-600 mb-6"
         >
           <ArrowLeft size={20} />
           <span>Back to listings</span>
@@ -780,7 +780,7 @@ const App = () => {
                       <span className="text-sm text-gray-600">
                         Qty: {item.quantity}
                       </span>
-                      <span className="font-bold text-green-600">
+                      <span className="font-bold text-blue-600">
                         ${(item.salePrice * item.quantity).toFixed(2)}
                       </span>
                     </div>
@@ -791,7 +791,7 @@ const App = () => {
               <div className="pt-4 border-t">
                 <div className="flex justify-between items-center text-xl font-bold">
                   <span>Total</span>
-                  <span className="text-green-600">${total.toFixed(2)}</span>
+                  <span className="text-blue-600">${total.toFixed(2)}</span>
                 </div>
               </div>
             </div>
@@ -822,7 +822,7 @@ const App = () => {
                       )
                     }
                     placeholder="1234 5678 9012 3456"
-                    className="w-full pl-12 pr-4 py-3 border-2 border-gray-200 rounded-lg focus:border-green-500 focus:outline-none"
+                    className="w-full pl-12 pr-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                     required
                   />
                 </div>
@@ -837,7 +837,7 @@ const App = () => {
                   value={cardName}
                   onChange={(e) => setCardName(e.target.value)}
                   placeholder="John Doe"
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-green-500 focus:outline-none"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                   required
                 />
               </div>
@@ -859,7 +859,7 @@ const App = () => {
                       )
                     }
                     placeholder="MM/YY"
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-green-500 focus:outline-none"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                     required
                   />
                 </div>
@@ -875,7 +875,7 @@ const App = () => {
                       setCvv(e.target.value.replace(/\D/g, "").slice(0, 3))
                     }
                     placeholder="123"
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-green-500 focus:outline-none"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                     required
                   />
                 </div>
@@ -883,7 +883,7 @@ const App = () => {
 
               <button
                 type="submit"
-                className="w-full bg-green-600 hover:bg-green-700 text-white py-4 rounded-xl font-bold text-lg transition mt-6"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-xl font-bold text-lg transition mt-6"
               >
                 Pay ${total.toFixed(2)}
               </button>
@@ -910,7 +910,7 @@ const App = () => {
           <p className="text-gray-600 mb-6">Start adding items you love!</p>
           <button
             onClick={() => navigate("/")}
-            className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold"
           >
             Browse Listings
           </button>
@@ -921,9 +921,9 @@ const App = () => {
     return (
       <div>
         <div className="flex items-center gap-3 mb-6">
-          <Heart className="text-green-600" size={32} />
+          <Heart className="text-blue-600" size={32} />
           <h1 className="text-3xl font-bold">Your Favorites</h1>
-          <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">
+          <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-bold">
             {favoriteListings.length}
           </span>
         </div>
@@ -973,7 +973,7 @@ const App = () => {
                     <span className="text-gray-400 line-through text-sm mr-2">
                       ${listing.originalPrice}
                     </span>
-                    <span className="text-green-600 font-bold text-2xl">
+                    <span className="text-blue-600 font-bold text-2xl">
                       ${listing.salePrice}
                     </span>
                   </div>
@@ -981,7 +981,7 @@ const App = () => {
 
                 <button
                   onClick={() => navigate(`/reserve/${listing.id}`)}
-                  className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition"
                 >
                   Reserve Now
                 </button>
@@ -1004,7 +1004,7 @@ const App = () => {
           </h2>
           <button
             onClick={() => navigate("/signin")}
-            className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold"
           >
             Sign In
           </button>
@@ -1016,8 +1016,8 @@ const App = () => {
       <div className="max-w-2xl mx-auto">
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <div className="text-center mb-8">
-            <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <User className="text-green-600" size={48} />
+            <div className="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <User className="text-blue-600" size={48} />
             </div>
             <h1 className="text-3xl font-bold">{user.name}</h1>
             <p className="text-gray-600">{user.email}</p>
@@ -1026,7 +1026,7 @@ const App = () => {
           <div className="space-y-6">
             <div className="flex justify-between items-center p-4 bg-gray-50 rounded-lg">
               <span className="font-semibold">Orders</span>
-              <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm">
+              <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
                 {cart.length}
               </span>
             </div>
@@ -1062,7 +1062,7 @@ const App = () => {
 
       <div className="grid md:grid-cols-3 gap-8 mb-12">
         <div className="text-center p-6 bg-white rounded-xl shadow-md">
-          <DollarSign className="text-green-600 mx-auto mb-4" size={48} />
+          <DollarSign className="text-blue-600 mx-auto mb-4" size={48} />
           <h3 className="text-xl font-bold mb-2">Earn Extra Revenue</h3>
           <p className="text-gray-600">
             Monetize food that would otherwise go to waste
@@ -1070,7 +1070,7 @@ const App = () => {
         </div>
 
         <div className="text-center p-6 bg-white rounded-xl shadow-md">
-          <Store className="text-green-600 mx-auto mb-4" size={48} />
+          <Store className="text-blue-600 mx-auto mb-4" size={48} />
           <h3 className="text-xl font-bold mb-2">Reach New Customers</h3>
           <p className="text-gray-600">
             Connect with local food lovers in your area
@@ -1078,7 +1078,7 @@ const App = () => {
         </div>
 
         <div className="text-center p-6 bg-white rounded-xl shadow-md">
-          <Heart className="text-green-600 mx-auto mb-4" size={48} />
+          <Heart className="text-blue-600 mx-auto mb-4" size={48} />
           <h3 className="text-xl font-bold mb-2">Reduce Food Waste</h3>
           <p className="text-gray-600">
             Contribute to a sustainable food ecosystem
@@ -1086,13 +1086,13 @@ const App = () => {
         </div>
       </div>
 
-      <div className="bg-green-600 text-white rounded-2xl p-8 text-center">
+      <div className="bg-blue-600 text-white rounded-2xl p-8 text-center">
         <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
-        <p className="text-green-50 mb-6 text-lg">
+        <p className="text-blue-50 mb-6 text-lg">
           Join thousands of sellers already reducing waste and earning extra
           income
         </p>
-        <button className="bg-white text-green-600 hover:bg-green-50 px-8 py-4 rounded-xl font-bold text-lg transition">
+        <button className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-xl font-bold text-lg transition">
           Become a Seller
         </button>
       </div>
@@ -1125,7 +1125,7 @@ const App = () => {
             </h2>
             <button
               onClick={() => navigate("/")}
-              className="text-green-600 hover:text-green-700 font-medium"
+              className="text-blue-600 hover:text-blue-700 font-medium"
             >
               Back to Home
             </button>
