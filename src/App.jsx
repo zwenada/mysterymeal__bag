@@ -146,7 +146,7 @@ const App = () => {
           onClick={() => navigate("/")}
           className="flex items-center gap-2 hover:opacity-80 transition"
         >
-          <ShoppingBag className="text-green-600" size={32} />
+          <ShoppingBag className="text-blue-600" size={32} />
           <h1 className="text-xl font-bold text-gray-800">MysteryMeal Bag</h1>
         </button>
         <nav className="hidden md:flex gap-6">
@@ -198,10 +198,10 @@ const App = () => {
   // Home Page
   const HomePage = () => {
     const Hero = () => (
-      <div className="bg-linear-to-r from-blue-600 to-emerald-600 text-white py-16 px-6 rounded-2xl mb-8">
+      <div className="bg-linear-to-r from-blue-600 to-emerald-600 text-black py-16 px-6 rounded-2xl mb-8">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Mystery Meal Bag
+            MysteryMeal Bag
           </h1>
           <p className="text-xl mb-6 text-blue-50">
             Discover surprise deals on quality food & ingredients from your
