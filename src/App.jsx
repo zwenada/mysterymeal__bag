@@ -203,7 +203,7 @@ const App = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             MysteryMeal Bag
           </h1>
-          <p className="text-xl mb-6 text-blue-50">
+          <p className="text-xl mb-6 text-blue-400">
             Discover surprise deals on quality food & ingredients from your
             neighbors and local restaurants
           </p>
